@@ -1,0 +1,145 @@
+/* CSS Custom Properties — Design System */
+
+:root {
+  /* === Colors: Light Theme === */
+  --color-bg: #f8f9fa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #f0f2f5;
+  --color-bg-sidebar: #1a2332;
+  --color-bg-sidebar-hover: #243447;
+  --color-bg-sidebar-active: #1e3a5f;
+  --color-bg-card: #ffffff;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  --color-text: #1a1a2e;
+  --color-text-secondary: #4a4a6a;
+  --color-text-muted: #8888a0;
+  --color-text-sidebar: #c8cdd4;
+  --color-text-sidebar-active: #ffffff;
+  --color-text-inverse: #ffffff;
+
+  --color-primary: #5b9bd5;
+  --color-primary-dark: #3d7ec0;
+  --color-primary-light: #8ab8e8;
+  --color-accent: #ff9800;
+  --color-accent-dark: #e68900;
+  --color-success: #4caf50;
+  --color-success-light: #e8f5e9;
+  --color-warning: #ff9800;
+  --color-warning-light: #fff3e0;
+  --color-danger: #e74c3c;
+  --color-danger-light: #fdecea;
+  --color-info: #5b9bd5;
+  --color-info-light: #e3f2fd;
+
+  --color-border: #e0e4e8;
+  --color-border-light: #f0f2f5;
+  --color-divider: #eee;
+
+  /* Phase Colors */
+  --color-phase-1: #4caf50;
+  --color-phase-2: #2196f3;
+  --color-phase-3: #ff9800;
+  --color-phase-4: #e74c3c;
+  --color-phase-5: #9c27b0;
+
+  /* === Shadows === */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+  /* === Typography === */
+  --font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* === Spacing === */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* === Layout === */
+  --header-height: 60px;
+  --sidebar-width: 280px;
+  --sidebar-collapsed-width: 0px;
+  --content-max-width: 900px;
+  --content-padding: var(--space-8);
+
+  /* === Borders === */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* === Z-index === */
+  --z-sidebar: 100;
+  --z-header: 200;
+  --z-overlay: 300;
+  --z-search: 400;
+  --z-toast: 500;
+}
+
+/* === Dark Theme === */
+[data-theme="dark"] {
+  --color-bg: #0f1923;
+  --color-bg-secondary: #1a2332;
+  --color-bg-tertiary: #243447;
+  --color-bg-sidebar: #0d1520;
+  --color-bg-sidebar-hover: #1a2a3a;
+  --color-bg-sidebar-active: #1e3a5f;
+  --color-bg-card: #1a2332;
+  --color-bg-overlay: rgba(0, 0, 0, 0.7);
+
+  --color-text: #e8ecf1;
+  --color-text-secondary: #b0b8c4;
+  --color-text-muted: #6b7a8d;
+  --color-text-sidebar: #a0aab4;
+  --color-text-sidebar-active: #ffffff;
+  --color-text-inverse: #1a1a2e;
+
+  --color-primary: #6dabf0;
+  --color-primary-dark: #5b9bd5;
+  --color-primary-light: #8ab8e8;
+  --color-accent: #ffab40;
+  --color-accent-dark: #ff9800;
+  --color-success: #66bb6a;
+  --color-success-light: #1b3a1b;
+  --color-warning: #ffab40;
+  --color-warning-light: #3a2e1b;
+  --color-danger: #ef5350;
+  --color-danger-light: #3a1b1b;
+  --color-info: #6dabf0;
+  --color-info-light: #1b2a3a;
+
+  --color-border: #2a3a4a;
+  --color-border-light: #1a2a3a;
+  --color-divider: #243447;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.6);
+}

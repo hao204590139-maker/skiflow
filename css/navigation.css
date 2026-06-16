@@ -1,0 +1,169 @@
+/* === Sidebar Navigation === */
+
+.sidebar-nav {
+  padding: var(--space-3) 0;
+  user-select: none;
+}
+
+/* Phase group */
+.nav-phase {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-phase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  cursor: pointer;
+  color: var(--color-text-sidebar);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: background var(--transition-fast);
+  gap: var(--space-2);
+}
+
+.nav-phase-header:hover {
+  background: var(--color-bg-sidebar-hover);
+}
+
+.nav-phase-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.nav-phase-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.nav-phase-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-phase-arrow {
+  font-size: 0.7rem;
+  transition: transform var(--transition-normal);
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.nav-phase.open .nav-phase-arrow {
+  transform: rotate(90deg);
+}
+
+.nav-phase-progress {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+/* Chapter items */
+.nav-chapters {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow);
+}
+
+.nav-phase.open .nav-chapters {
+  max-height: 2000px;
+}
+
+.nav-chapter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5) var(--space-2) var(--space-10);
+  cursor: pointer;
+  color: var(--color-text-sidebar);
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.nav-chapter:hover {
+  background: var(--color-bg-sidebar-hover);
+  color: var(--color-text-sidebar-active);
+}
+
+.nav-chapter.active {
+  background: var(--color-bg-sidebar-active);
+  color: var(--color-text-sidebar-active);
+  border-left-color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-chapter.completed {
+  color: var(--color-success);
+}
+
+.nav-chapter-num {
+  font-size: var(--text-xs);
+  opacity: 0.6;
+  min-width: 24px;
+}
+
+.nav-chapter-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-chapter-check {
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.nav-chapter.completed .nav-chapter-check {
+  opacity: 1;
+}
+
+/* === Appendix section in sidebar === */
+.nav-appendix {
+  margin-top: var(--space-2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-2);
+}
+
+.nav-appendix-label {
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.nav-appendix-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  cursor: pointer;
+  color: var(--color-text-sidebar);
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
+}
+
+.nav-appendix-item:hover {
+  background: var(--color-bg-sidebar-hover);
+  color: var(--color-text-sidebar-active);
+}
+
+.nav-appendix-item.active {
+  background: var(--color-bg-sidebar-active);
+  color: var(--color-text-sidebar-active);
+  font-weight: 600;
+}
+
+/* === Sidebar collapsed state === */
+.sidebar.collapsed {
+  margin-left: calc(var(--sidebar-width) * -1);
+}
