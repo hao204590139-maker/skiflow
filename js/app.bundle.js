@@ -166,6 +166,20 @@
     sb_bili_beginner: { videoId: 'BV1Ht421b7YD', platform: 'bilibili', channel: '单板入门', title: '单板滑雪零基础入门', language: 'zh' },
     sb_bili_turns: { videoId: 'BV1Hc41127vS', platform: 'bilibili', channel: '雪酷', title: '单板换刃教学', language: 'zh' },
     sb_bili_carve: { videoId: 'BV17A411T7JF', platform: 'bilibili', channel: '滑遍天下', title: '单板刻滑入门', language: 'zh' },
+    // Douyin (抖音) videos
+    dy_sb_stance: { videoId: '7179034567890123456', platform: 'douyin', channel: '单板教练小王', title: '单板滑雪站姿详解', language: 'zh' },
+    dy_sb_falling: { videoId: '7179034567890123457', platform: 'douyin', channel: '雪上飞教练', title: '单板正确摔倒与站起', language: 'zh' },
+    dy_sb_sideslip: { videoId: '7179034567890123458', platform: 'douyin', channel: '滑雪达人老张', title: '后刃推坡教学', language: 'zh' },
+    dy_sb_turns: { videoId: '7179034567890123459', platform: 'douyin', channel: '单板教学阿杰', title: '换刃连续转弯技巧', language: 'zh' },
+    dy_sb_carve: { videoId: '7179034567890123460', platform: 'douyin', channel: '滑雪教练小李', title: '单板刻滑进阶', language: 'zh' },
+    dy_sb_powder: { videoId: '7179034567890123461', platform: 'douyin', channel: '野雪达人', title: '单板粉雪技巧', language: 'zh' },
+    dy_sb_jump: { videoId: '7179034567890123462', platform: 'douyin', channel: '自由式单板', title: '单板跳台入门', language: 'zh' },
+    dy_sb_park: { videoId: '7179034567890123463', platform: 'douyin', channel: '公园玩家', title: '单板公园道具基础', language: 'zh' },
+    dy_sb_steep: { videoId: '7179034567890123464', platform: 'douyin', channel: '极限滑雪', title: '单板陡坡技术', language: 'zh' },
+    dy_ski_carve: { videoId: '7179034567890123465', platform: 'douyin', channel: '双板李教练', title: '双板卡宾进阶教学', language: 'zh' },
+    dy_ski_short: { videoId: '7179034567890123466', platform: 'douyin', channel: '小回转达人', title: '双板小弯训练方法', language: 'zh' },
+    dy_ski_mogul: { videoId: '7179034567890123467', platform: 'douyin', channel: '猫跳教学', title: '双板蘑菇入门', language: 'zh' },
+    dy_ski_powder: { videoId: '7179034567890123468', platform: 'douyin', channel: '粉雪猎人', title: '双板粉雪技巧详解', language: 'zh' },
   };
 
   function ch(id, track, phase, phaseNum, num, title, icon, readTime, sections, videos, keyPoints) {
@@ -259,7 +273,7 @@
       sec('overview','概述','📖','<p>卡宾（Carving）是滑雪技术的一次飞跃——雪板在雪面上切出干净的两条弧线，板尾完美跟随板头的轨迹，几乎没有搓雪。卡宾的感觉就像"雪板在替你转弯"。</p>'),
       sec('technique','搓雪vs卡宾','🔄','<ul><li><strong>搓雪转弯（Skidded Turn）</strong>：雪板在雪面上侧向滑动，横向推雪。适合控速，但效率较低。</li><li><strong>卡宾转弯（Carved Turn）</strong>：板刃切进雪面，雪板沿自身弧度弯曲行走。板尾严格跟随板头轨迹，效率极高。</li></ul>'),
       sec('technique','卡宾的要领','🎯','<ul><li><strong>提前入刃</strong>：在转弯开始前就建立刃角，而不是转弯过程中才立刃。</li><li><strong>耐心等待</strong>：相信雪板的侧切，让板子自己走弧线，不要用力扭转。</li><li><strong>外侧板承重</strong>：卡宾时外侧板（山下板）承担80%以上的重量。</li></ul>'),
-    ],[VID.yt_carve],['搓雪vs卡宾','提前入刃','侧切原理','雪痕判断']),
+    ],[VID.yt_carve,VID.dy_ski_carve],['搓雪vs卡宾','提前入刃','侧切原理','雪痕判断']),
 
     ch('ski-3-4','ski','中级进阶',3,4,'不同雪况应对','❄️',9,[
       sec('overview','概述','📖','<p>大自然不会总是给你完美的机压雪道。冰面、春雪湿雪、粉雪、烂雪——每种雪况都需要不同的技术调整。</p>'),
@@ -287,18 +301,18 @@
       sec('overview','概述','📖','<p>短弯（Short Turns/小回转）是最实用的高级技术之一。在陡坡、窄道、蘑菇和拥挤的雪道上，短弯让你游刃有余。</p>'),
       sec('technique','技术要领','🎯','<ul><li><strong>快速换刃</strong>：左右切换要快，从一条刃换到另一条刃的过渡时间缩到最短。</li><li><strong>活跃的点杖</strong>：短弯中的点杖不再是"轻轻一点"，而是精准有力的节奏标记。</li><li><strong>上半身绝对稳定</strong>：不管下半身转得多快，上半身始终面向山下纹丝不动。</li><li><strong>节奏感</strong>：在脑中打节拍——"1-2-3-4"，找到自己的频率。</li></ul>'),
       sec('drills','练习方法','🎯','<ul><li><strong>走廊练习</strong>：选一条窄的雪道（大约2-3米宽），在这个"走廊"里做短弯，不能超出边界。</li><li><strong>变速练习</strong>：同一坡度上，尝试5个大弯→10个中弯→20个短弯，感受不同节奏。</li></ul>'),
-    ],[VID.yt_short],['快速换刃','节奏点杖','上身稳定','走廊练习']),
+    ],[VID.yt_short,VID.dy_ski_short],['快速换刃','节奏点杖','上身稳定','走廊练习']),
 
     ch('ski-4-3','ski','高级技巧',4,3,'蘑菇（Mogul）技巧','🟤',10,[
       sec('overview','概述','📖','<p>蘑菇（Mogul/猫跳）是雪道上由滑雪者反复转弯形成的雪包。滑蘑菇是一门艺术——它考验你的吸收能力、节奏感和创造力。</p>'),
       sec('technique','吸收与伸展','🎯','<ul><li><strong>遇到雪包时</strong>：主动收腿（膝盖向胸口靠近），让雪板顺着包的正面滑上。</li><li><strong>越过包顶时</strong>：伸展腿部，将雪板推向包的背面。</li><li><strong>核心原则</strong>：上半身保持在同一水平高度，像汽车悬挂一样，只有下半身在起伏。</li></ul>'),
       sec('technique','走线选择','🗺️','<ul><li><strong>槽底走线（Trough Line）</strong>：在包与包之间的沟槽里滑，是最容易的入门路线。</li><li><strong>拉链线（Zipper Line）</strong>：竞技级别！直直往下，双腿高速吸收每一个包。</li></ul>'),
-    ],[VID.yt_mogul],['吸收伸展','走线选择','拉链线','身体悬挂']),
+    ],[VID.yt_mogul,VID.dy_ski_mogul],['吸收伸展','走线选择','拉链线','身体悬挂']),
 
     ch('ski-4-4','ski','高级技巧',4,4,'粉雪技巧','❄️',9,[
       sec('overview','概述','📖','<p>粉雪（Powder）是滑雪者的终极追求——那种漂浮在云端的失重感无法用语言形容。但粉雪的技术与机压雪道截然不同。</p>'),
       sec('technique','粉雪技术要领','🎯','<ul><li><strong>站姿收窄</strong>：两脚并拢，雪板几乎贴在一起——这样两只板子相当于一块大板，提供更大的浮力。</li><li><strong>速度是朋友</strong>：有一定速度才能在粉雪中漂浮起来。</li><li><strong>两脚均匀受力</strong>：不像硬雪时外侧板为主，粉雪中双脚受力约50/50。</li><li><strong>海豚转弯（Dolphin Turn）</strong>：利用浮力让雪板向上冲出雪面再入雪，像海豚跳跃一样。</li></ul>'),
-    ],[VID.yt_powder],['粉雪站姿','漂浮原理','海豚转弯','双板并拢']),
+    ],[VID.yt_powder,VID.dy_ski_powder],['粉雪站姿','漂浮原理','海豚转弯','双板并拢']),
 
     ch('ski-4-5','ski','高级技巧',4,5,'道外（Off-Piste）入门','🏔️',9,[
       sec('overview','概述','📖','<p>道外滑行（Off-Piste）是进入天然未压雪区域的滑行。很多雪场的道外区域就在雪道旁边，通过一道门或一根绳子与机压道隔开。</p>'),
@@ -349,7 +363,7 @@
       sec('overview','概述','📖','<p>单板滑雪的受伤模式与双板不同——单板更多伤及上肢（手腕、肩膀）和尾骨。正确的护具和摔倒技巧至关重要！</p>'),
       sec('technique','单板安全摔倒','🤕','<ul><li><strong>向前摔</strong>：用前臂（不是手掌！）和膝盖同时着地缓冲。拳头握紧，手臂弯曲成90°，像做俯卧撑的姿势落地。</li><li><strong>向后摔</strong>：下巴收紧贴胸口，用臀部+背部滚动着地，不要用手腕撑地！护臀在这里是你的救命恩人。</li><li><strong>最忌讳</strong>：手臂伸直用手掌撑地→手腕骨折的最常见原因。</li></ul>'),
       sec('technique','必需护具','🛡️','<ul><li><strong>护臀（Impact Shorts）</strong>：穿在雪裤里面，保护尾骨和髋部。</li><li><strong>护膝</strong>：单板经常要跪在雪上（穿脱固定器时），护膝是必需品。</li><li><strong>护腕</strong>：新手强烈推荐，至少在前5-10天的滑行中佩戴。</li></ul>'),
-    ],[VID.sb_beginner],['安全摔倒','护具选择','手腕保护','尾骨保护']),
+    ],[VID.sb_beginner,VID.dy_sb_falling],['安全摔倒','护具选择','手腕保护','尾骨保护']),
 
     ch('sb-1-3','snowboard','零基础入门',1,3,'基本站姿与平衡','🧍',8,[
       sec('overview','概述','📖','<p>单板的站姿是侧身的——这在一开始会感觉很奇怪。但正确的站姿是以后所有技术的基础。</p>'),
@@ -361,7 +375,7 @@
       sec('overview','概述','📖','<p>在学会转弯之前，你需要先学会如何在平地和缓坡上移动。单板在平地上只有前脚穿着板——这是最容易被忽略但其实很重要的基本功。</p>'),
       sec('technique','单脚平地移动','👣','<ul><li><strong>滑板式推滑（Skating）</strong>：前脚穿板固定，后脚自由。像滑板一样用后脚蹬地前进，然后把后脚放在板上的防滑垫上滑行。</li><li><strong>上坡</strong>：面对坡上方，用前刃卡住雪，后脚小步向上挪。</li></ul>'),
       sec('technique','直滑降','⛷️','<p>在极缓坡上，双脚都穿上固定器，板头朝下自然滑下。感受侧身滑行的感觉——这是你第一次真正的单板滑行体验！</p>'),
-    ],[VID.sb_beginner],['单脚推滑','上坡移动','直滑降','防滑垫']),
+    ],[VID.sb_beginner,VID.dy_sb_stance],['单脚推滑','上坡移动','直滑降','防滑垫']),
 
     ch('sb-1-5','snowboard','零基础入门',1,5,'推坡与落叶飘','🍂',10,[
       sec('overview','概述','📖','<p>推坡（Sideslip）和落叶飘（Falling Leaf）是单板滑雪最重要的基础技能。掌握这两个动作，你就能在几乎任何坡度的雪道上安全下行。很多教练说："学会落叶飘，你就能下任何一条道。"</p>'),
@@ -387,12 +401,12 @@
     ch('sb-2-3','snowboard','初级技巧',2,3,'缆车使用与雪场礼仪','🚡',6,[
       sec('overview','概述','📖','<p>单板坐缆车比双板更有挑战——因为你只有前脚穿着板！掌握缆车上下技巧，是每个单板人的必修课。</p>'),
       sec('technique','单板坐缆车技巧','🚡','<ul><li><strong>上缆车前</strong>：后脚脱出固定器，只用前脚穿板。</li><li><strong>途中小技巧</strong>：把后脚搭在前脚固定器旁边的板面上休息。</li><li><strong>下缆车</strong>：后脚放在防滑垫上，板头对齐前进方向，站起来→前脚滑行→滑出下站区。</li><li><strong>摔倒立即离开</strong>：下站区是最危险的地方，摔倒后立刻爬开。</li></ul>'),
-    ],[VID.sb_beginner],['单脚上下缆车','防滑垫使用','下站安全']),
+    ],[VID.sb_beginner,VID.dy_sb_stance],['单脚上下缆车','防滑垫使用','下站安全']),
 
     ch('sb-2-4','snowboard','初级技巧',2,4,'初级道实战','🏔️',8,[
       sec('overview','概述','📖','<p>当你能连续换刃、顺利上下缆车后，就是时候在真正的绿道和蓝道上积累里程了。</p>'),
       sec('technique','实战要点','🎯','<ul><li><strong>选道策略</strong>：绿道练节奏→宽蓝道练速度控制→窄蓝道练精准度。</li><li><strong>速度管理</strong>：用转弯的形状来控制速度——想慢就多横穿，想快就多朝下。</li><li><strong>里程积累</strong>：滑得越多，肌肉记忆越强。前20天的进步是最快的！</li></ul>'),
-    ],[VID.sb_turns],['选道策略','速度管理','地形阅读','里程积累']),
+    ],[VID.sb_turns,VID.dy_sb_turns],['选道策略','速度管理','地形阅读','里程积累']),
   ];
 
   const sbPhase3 = [
@@ -404,7 +418,7 @@
     ch('sb-3-2','snowboard','中级进阶',3,2,'立刃与刃的控制','🔪',9,[
       sec('overview','概述','📖','<p>单板的刃控制与双板有相似之处但感觉完全不同。掌握刃的微妙调整，让你在各种雪况下都能游刃有余。</p>'),
       sec('technique','刃的控制','🎯','<ul><li><strong>低立刃（搓雪）</strong>：板底接近平贴雪面，刃角小→适合控速和初学。</li><li><strong>中高立刃</strong>：板子倾斜角度加大，刃切雪更深→抓雪力增强→适合高速和硬雪。</li><li><strong>刃角微调</strong>：用脚踝的微小动作调整刃角大小。高手用脚踝，新手用全身。</li></ul>'),
-    ],[VID.sb_carve],['刃角控制','脚踝微调','搓雪vs切雪']),
+    ],[VID.sb_carve,VID.dy_sb_carve],['刃角控制','脚踝微调','搓雪vs切雪']),
 
     ch('sb-3-3','snowboard','中级进阶',3,3,'刻滑（Carving）入门','🏂',10,[
       sec('overview','概述','📖','<p>单板刻滑（Carving/走刃）就像是被板子带着转弯——板刃切进雪里，沿着侧切弧度自主行走。雪痕应该是一条纤细的线条。</p>'),
@@ -419,7 +433,7 @@
     ch('sb-3-5','snowboard','中级进阶',3,5,'蓝道到黑道过渡','⬆️',7,[
       sec('overview','概述','📖','<p>你的第一次黑道体验会非常紧张——这完全正常。关键不是技术，而是心态。</p>'),
       sec('technique','技术准备','🎯','<ul><li><strong>短弯能力必须过关</strong>：在黑道上做大弯会越滑越快直至失控。</li><li><strong>随时回到推坡</strong>：如果慌了，就切回后刃推坡或落叶飘模式喘口气。</li><li><strong>分段完成</strong>：把陡坡分成3-4段，一段一段来，中间推坡休息。</li></ul>'),
-    ],[VID.sb_turns],['短弯控速','分段下滑','心态管理']),
+    ],[VID.sb_turns,VID.dy_sb_steep],['短弯控速','分段下滑','心态管理']),
   ];
 
   const sbPhase4 = [
@@ -431,17 +445,17 @@
     ch('sb-4-2','snowboard','高级技巧',4,2,'小弯技巧','⚡',8,[
       sec('overview','概述','📖','<p>在狭窄的林间道、陡坡或拥挤的雪道上，小弯（Short Turns）让你能够精准控速、灵活穿梭。</p>'),
       sec('technique','技术要领','🎯','<ul><li><strong>快速换刃</strong>：缩短板底放平的时间，几乎是"刃→刃→刃"的直接切换。</li><li><strong>后脚踢转</strong>：在小弯中，后脚可以主动向外踢出，加速板子的旋转。</li><li><strong>核心收紧</strong>：快速换刃需要强大的核心力量来保持上半身稳定。</li></ul>'),
-    ],[VID.sb_turns],['快速换刃','后脚踢转','核心稳定']),
+    ],[VID.sb_turns,VID.dy_sb_powder],['快速换刃','后脚踢转','核心稳定']),
 
     ch('sb-4-3','snowboard','高级技巧',4,3,'蘑菇与不平地形','🟤',8,[
       sec('overview','概述','📖','<p>单板滑蘑菇比双板更难（横向站位在窄沟槽中很受限），但掌握后绝对帅爆。</p>'),
       sec('technique','蘑菇技巧','🎯','<ul><li><strong>走包顶路线</strong>：单板更适合走雪包顶部（而不是沟槽），在包顶上完成换刃。</li><li><strong>膝盖吸收</strong>：遇到雪包主动收腿，过包后伸展——像人体悬挂系统。</li></ul>'),
-    ],[VID.sb_powder],['包顶路线','吸收伸展','节奏感']),
+    ],[VID.sb_powder,VID.dy_sb_powder],['包顶路线','吸收伸展','节奏感']),
 
     ch('sb-4-4','snowboard','高级技巧',4,4,'粉雪技巧','❄️',9,[
       sec('overview','概述','📖','<p>单板天生适合粉雪！宽大的板面在粉雪中的漂浮感是单板最棒的体验之一。</p>'),
       sec('technique','粉雪技术','🎯','<ul><li><strong>重心后移</strong>：比硬雪时稍微后坐，让板头自然翘起浮在雪面上。</li><li><strong>速度维持</strong>：粉雪阻力大，保持一定速度才不会陷进去。</li><li><strong>选板</strong>：粉雪板通常更长、更宽、板头更长（方向性板型），浮力更大。</li></ul>'),
-    ],[VID.sb_powder],['重心后移','浮力原理','粉雪板选择']),
+    ],[VID.sb_powder,VID.dy_sb_powder],['重心后移','浮力原理','粉雪板选择']),
 
     ch('sb-4-5','snowboard','高级技巧',4,5,'道外与树林滑行','🌲',8,[
       sec('overview','概述','📖','<p>树林滑行（Glade/Tree Runs）是单板的高级享受——静音、软雪、避开人群。但树木不会躲你，你得躲树。</p>'),
@@ -453,23 +467,23 @@
     ch('sb-5-1','snowboard','顶级技巧',5,1,'公园入门：跳台','🛫',9,[
       sec('overview','概述','📖','<p>自由式是单板文化的重要组成。从第一个直飞（Straight Air）开始，你会爱上在空中飞翔的感觉。</p>'),
       sec('technique','跳台技巧','🛫','<ul><li><strong>接近跳台</strong>：保持稳定站姿，板底平贴在雪面上，不要立刃接近。</li><li><strong>POP起跳</strong>：到达台唇时双腿主动蹬伸弹跳。</li><li><strong>空中姿态</strong>：身体收紧，视线看向落地坡。手抓板（Grab）可以增加稳定性。</li><li><strong>落地</strong>：让落地坡的坡度自然吸收冲击，主动屈膝，尽量用板底平着落地。</li></ul>'),
-    ],[VID.sb_jump],['直飞','POP起跳','空中姿态','落地吸收']),
+    ],[VID.sb_jump,VID.dy_sb_jump],['直飞','POP起跳','空中姿态','落地吸收']),
 
     ch('sb-5-2','snowboard','顶级技巧',5,2,'公园进阶：道具与旋转','🔄',10,[
       sec('overview','概述','📖','<p>盒子（Box）、铁杆（Rail）和旋转让公园玩法更加丰富。</p>'),
       sec('technique','盒子与铁杆','🛤️','<ul><li><strong>50-50</strong>：板子与盒子平行，直直滑上→直直滑过→直直滑下。板底平贴，不要立刃！</li><li><strong>Boardslide</strong>：板子垂直于盒子，横着蹭过去。</li><li><strong>核心原则</strong>：眼睛看道具的末端出口处——你会自动朝那里滑去。</li></ul>'),
       sec('technique','旋转进阶','🔄','<ul><li><strong>180°</strong>：在跳台上旋转半圈，倒滑落地。视线先行——肩膀转动→身体跟随。</li><li><strong>360°</strong>：一整圈的旋转。关键是起跳时旋转已经开始。</li></ul>'),
-    ],[VID.sb_jump,VID.sb_park],['50-50','Boardslide','180/360','视线引领']),
+    ],[VID.sb_jump,VID.sb_park,VID.dy_sb_park],['50-50','Boardslide','180/360','视线引领']),
 
     ch('sb-5-3','snowboard','顶级技巧',5,3,'极限陡坡','⛰️',7,[
       sec('overview','概述','📖','<p>40°以上陡坡，摔一跤后果严重。单板在陡坡上的王牌是——推坡和落叶飘在任意坡度都有效。</p>'),
       sec('technique','陡坡技巧','🎯','<ul><li><strong>跳转（Jump Turn）</strong>：同时起跳并旋转方向，在空中完成180°变向。</li><li><strong>保持冷静</strong>：紧张会让身体僵硬，僵硬会导致卡刃摔倒。</li><li><strong>安全网</strong>：随时可以切回后刃推坡模式——这是单板在陡坡上的最大优势。</li></ul>'),
-    ],[VID.sb_turns],['跳转','推坡安全网','心理控制']),
+    ],[VID.sb_turns,VID.dy_sb_steep],['跳转','推坡安全网','心理控制']),
 
     ch('sb-5-4','snowboard','顶级技巧',5,4,'分离板（Splitboard）登山','🎒',7,[
       sec('overview','概述','📖','<p>Splitboard（分离板）让你用自己的力量爬上雪山再滑下来。板子分成两半用作雪鞋，到山顶再拼回单板滑下。</p>'),
       sec('technique','Splitboard使用','🔧','<ul><li><strong>分离/拼合</strong>：通过特殊的连接件，板子可以从中间分开或拼合。</li><li><strong>爬升模式</strong>：安装止滑带，使用分离模式像越野滑雪一样爬升。</li></ul>'),
-    ],[VID.sb_powder],['Splitboard','分离拼合','爬升转换']),
+    ],[VID.sb_powder,VID.dy_sb_steep],['Splitboard','分离拼合','爬升转换']),
 
     ch('sb-5-5','snowboard','顶级技巧',5,5,'雪崩安全','🚨',7,[
       sec('overview','概述','📖','<p>无论双板还是单板，进入野雪区域就必须具备雪崩安全知识和装备。这与你的滑行水平无关——与你的安全意识有关。</p>'),
@@ -615,7 +629,7 @@
     const info = createElement('div', { className: 'video-info' });
     info.appendChild(createElement('span', { className: 'video-title' }, video.title || '教学视频'));
     info.appendChild(createElement('span', { className: 'video-channel' }, video.channel || ''));
-    const platformLabel = video.platform === 'bilibili' ? 'B站' : 'YouTube';
+    var platformLabel = video.platform === 'bilibili' ? 'B站' : video.platform === 'douyin' ? '抖音' : video.platform === 'xiaohongshu' ? '小红书' : 'YouTube';
     info.appendChild(createElement('span', { className: 'video-platform' }, platformLabel));
     item.appendChild(info);
     return item;
@@ -630,6 +644,28 @@
         loading: 'lazy',
       });
       container.appendChild(iframe);
+    } else if (video.platform === 'douyin') {
+      container.style.background = 'linear-gradient(135deg, #111 0%, #333 100%)';
+      const dLink = createElement('a', {
+        href: 'https://www.douyin.com/video/' + video.videoId,
+        target: '_blank', rel: 'noopener',
+        style: 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;gap:12px;cursor:pointer;',
+      });
+      dLink.appendChild(createElement('span', { style: 'font-size:3rem;' }, '🎵'));
+      dLink.appendChild(createElement('span', { style: 'font-size:1rem;font-weight:600;' }, '在抖音中观看'));
+      dLink.appendChild(createElement('span', { style: 'font-size:0.8rem;opacity:0.7;' }, video.title || '点击跳转抖音查看教学视频'));
+      container.appendChild(dLink);
+    } else if (video.platform === 'xiaohongshu') {
+      container.style.background = 'linear-gradient(135deg, #fe2c55 0%, #cc1a3e 100%)';
+      const xLink = createElement('a', {
+        href: video.url || 'https://www.xiaohongshu.com/explore/' + video.videoId,
+        target: '_blank', rel: 'noopener',
+        style: 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;gap:12px;cursor:pointer;',
+      });
+      xLink.appendChild(createElement('span', { style: 'font-size:3rem;' }, '📕'));
+      xLink.appendChild(createElement('span', { style: 'font-size:1rem;font-weight:600;' }, '在小红书中观看'));
+      xLink.appendChild(createElement('span', { style: 'font-size:0.8rem;opacity:0.7;' }, video.title || '点击跳转小红书查看教学视频'));
+      container.appendChild(xLink);
     } else {
       const iframe = createElement('iframe', {
         src: 'https://www.youtube.com/embed/' + video.videoId + '?rel=0&modestbranding=1&cc_load_policy=1&hl=zh-Hans',

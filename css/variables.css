@@ -1,93 +1,88 @@
-/* CSS Custom Properties — Design System */
+/* CSS Custom Properties — Skiflow Red-Blue-White Design System */
 
 :root {
+  /* === Core Palette: Red-Blue-White === */
+  --color-red: #c41e3a;
+  --color-red-dark: #a0182f;
+  --color-red-light: #e8475e;
+  --color-blue: #1d3557;
+  --color-blue-dark: #112240;
+  --color-blue-light: #2a5298;
+  --color-blue-pale: #457b9d;
+  --color-white: #ffffff;
+  --color-snow: #f0f4f8;
+  --color-ice: #e8f0fe;
+
   /* === Colors: Light Theme === */
-  --color-bg: #f8f9fa;
+  --color-bg: #f8f9fb;
   --color-bg-secondary: #ffffff;
-  --color-bg-tertiary: #f0f2f5;
-  --color-bg-sidebar: #1a2332;
-  --color-bg-sidebar-hover: #243447;
-  --color-bg-sidebar-active: #1e3a5f;
+  --color-bg-tertiary: #f0f4f8;
+  --color-bg-sidebar: var(--color-blue-dark);
+  --color-bg-sidebar-hover: #1a3355;
+  --color-bg-sidebar-active: var(--color-red);
   --color-bg-card: #ffffff;
-  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+  --color-bg-overlay: rgba(17, 34, 64, 0.6);
 
   --color-text: #1a1a2e;
-  --color-text-secondary: #4a4a6a;
-  --color-text-muted: #8888a0;
-  --color-text-sidebar: #c8cdd4;
+  --color-text-secondary: #3d4f6f;
+  --color-text-muted: #7b8ba5;
+  --color-text-sidebar: #c8d0dc;
   --color-text-sidebar-active: #ffffff;
   --color-text-inverse: #ffffff;
 
-  --color-primary: #5b9bd5;
-  --color-primary-dark: #3d7ec0;
-  --color-primary-light: #8ab8e8;
-  --color-accent: #ff9800;
-  --color-accent-dark: #e68900;
-  --color-success: #4caf50;
+  --color-primary: var(--color-red);
+  --color-primary-dark: var(--color-red-dark);
+  --color-primary-light: var(--color-red-light);
+  --color-accent: var(--color-blue-pale);
+  --color-accent-dark: var(--color-blue-light);
+  --color-success: #2e7d32;
   --color-success-light: #e8f5e9;
-  --color-warning: #ff9800;
+  --color-warning: #ef6c00;
   --color-warning-light: #fff3e0;
-  --color-danger: #e74c3c;
+  --color-danger: #c62828;
   --color-danger-light: #fdecea;
-  --color-info: #5b9bd5;
-  --color-info-light: #e3f2fd;
+  --color-info: var(--color-blue-pale);
+  --color-info-light: var(--color-ice);
 
-  --color-border: #e0e4e8;
-  --color-border-light: #f0f2f5;
-  --color-divider: #eee;
+  --color-border: #dce3eb;
+  --color-border-light: #edf1f6;
+  --color-divider: #edf1f6;
 
   /* Phase Colors */
   --color-phase-1: #4caf50;
   --color-phase-2: #2196f3;
   --color-phase-3: #ff9800;
-  --color-phase-4: #e74c3c;
-  --color-phase-5: #9c27b0;
+  --color-phase-4: #e63946;
+  --color-phase-5: #7b1fa2;
 
   /* === Shadows === */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 1px 3px rgba(29, 53, 87, 0.08);
+  --shadow-md: 0 4px 12px rgba(29, 53, 87, 0.1);
+  --shadow-lg: 0 8px 30px rgba(29, 53, 87, 0.12);
+  --shadow-xl: 0 12px 40px rgba(29, 53, 87, 0.16);
 
   /* === Typography === */
   --font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "SF Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
-
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-base: 1rem;
+  --text-lg: 1.125rem; --text-xl: 1.25rem; --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem; --text-4xl: 2.25rem;
 
   /* === Spacing === */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+  --space-16: 4rem; --space-20: 5rem;
 
   /* === Layout === */
   --header-height: 60px;
   --sidebar-width: 280px;
-  --sidebar-collapsed-width: 0px;
-  --content-max-width: 900px;
+  --content-max-width: 960px;
   --content-padding: var(--space-8);
 
   /* === Borders === */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px;
+  --radius-xl: 24px; --radius-full: 9999px;
 
   /* === Transitions === */
   --transition-fast: 150ms ease;
@@ -95,51 +90,395 @@
   --transition-slow: 400ms ease;
 
   /* === Z-index === */
-  --z-sidebar: 100;
-  --z-header: 200;
-  --z-overlay: 300;
-  --z-search: 400;
-  --z-toast: 500;
+  --z-sidebar: 100; --z-header: 200;
+  --z-overlay: 300; --z-search: 400; --z-toast: 500;
+  --z-snow: 50; --z-flake: 10;
 }
 
 /* === Dark Theme === */
 [data-theme="dark"] {
-  --color-bg: #0f1923;
-  --color-bg-secondary: #1a2332;
-  --color-bg-tertiary: #243447;
-  --color-bg-sidebar: #0d1520;
-  --color-bg-sidebar-hover: #1a2a3a;
-  --color-bg-sidebar-active: #1e3a5f;
-  --color-bg-card: #1a2332;
-  --color-bg-overlay: rgba(0, 0, 0, 0.7);
+  --color-bg: #0a1628;
+  --color-bg-secondary: #112240;
+  --color-bg-tertiary: #1a3355;
+  --color-bg-sidebar: #060f1f;
+  --color-bg-sidebar-hover: #112240;
+  --color-bg-sidebar-active: var(--color-red);
+  --color-bg-card: #112240;
+  --color-bg-overlay: rgba(0, 0, 0, 0.75);
 
-  --color-text: #e8ecf1;
-  --color-text-secondary: #b0b8c4;
-  --color-text-muted: #6b7a8d;
-  --color-text-sidebar: #a0aab4;
+  --color-text: #e8ecf4;
+  --color-text-secondary: #b0bdd0;
+  --color-text-muted: #6b7d9a;
+  --color-text-sidebar: #a0b0c8;
   --color-text-sidebar-active: #ffffff;
   --color-text-inverse: #1a1a2e;
 
-  --color-primary: #6dabf0;
-  --color-primary-dark: #5b9bd5;
-  --color-primary-light: #8ab8e8;
-  --color-accent: #ffab40;
-  --color-accent-dark: #ff9800;
-  --color-success: #66bb6a;
-  --color-success-light: #1b3a1b;
-  --color-warning: #ffab40;
-  --color-warning-light: #3a2e1b;
-  --color-danger: #ef5350;
-  --color-danger-light: #3a1b1b;
-  --color-info: #6dabf0;
-  --color-info-light: #1b2a3a;
+  --color-primary: #e8475e;
+  --color-primary-dark: #c41e3a;
+  --color-primary-light: #f07080;
+  --color-accent: #5b9bd5;
+  --color-accent-dark: #457b9d;
 
-  --color-border: #2a3a4a;
-  --color-border-light: #1a2a3a;
-  --color-divider: #243447;
+  --color-border: #1a3355;
+  --color-border-light: #112240;
+  --color-divider: #1a3355;
+  --color-snow: #112240;
+  --color-ice: #1a3355;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
   --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SNOWFLAKE ANIMATION SYSTEM
+   ═══════════════════════════════════════════════════════════════════ */
+
+.snowflakes-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-snow);
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -40px;
+  color: #c8ddf0;
+  font-size: 1em;
+  animation: snowFall linear infinite;
+  opacity: 0.7;
+  text-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+@keyframes snowFall {
+  0% {
+    transform: translateY(-40px) rotate(0deg) translateX(0);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(25vh) rotate(90deg) translateX(30px);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg) translateX(-20px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateY(75vh) rotate(270deg) translateX(15px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(-10px);
+    opacity: 0.2;
+  }
+}
+
+/* Different snowflake speeds and sizes */
+.snowflake:nth-child(odd) { animation-duration: 12s; font-size: 1.2em; }
+.snowflake:nth-child(even) { animation-duration: 16s; font-size: 0.8em; }
+.snowflake:nth-child(3n) { animation-duration: 14s; font-size: 1.4em; }
+.snowflake:nth-child(4n) { animation-duration: 18s; font-size: 0.6em; }
+.snowflake:nth-child(5n) { animation-duration: 10s; font-size: 1.1em; }
+
+/* ═══════════════════════════════════════════════════════════════════
+   SKI TRACK / SLOPE DECORATIVE ELEMENTS
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Hero section ski slope background */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(196, 30, 58, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(ellipse at center, rgba(29, 53, 87, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Ski track line decoration */
+.header {
+  background: linear-gradient(135deg, var(--color-white) 0%, #f0f4f8 100%);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-red), var(--color-blue), var(--color-red)) 1;
+}
+
+/* Card hover ski-effect */
+.phase-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.phase-card::before {
+  background: linear-gradient(90deg, var(--color-red), var(--color-blue));
+  height: 4px;
+}
+
+/* Sidebar accent */
+.sidebar {
+  background: linear-gradient(180deg, var(--color-blue-dark) 0%, #0f1f38 100%);
+}
+
+.nav-chapter.active {
+  background: linear-gradient(90deg, var(--color-red), transparent);
+  border-left-color: var(--color-red);
+}
+
+/* Resort link styling */
+.resort-link {
+  color: var(--color-blue-pale);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.resort-link:hover {
+  color: var(--color-blue-light);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PULSE & GLOW ANIMATIONS
+   ═══════════════════════════════════════════════════════════════════ */
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(196, 30, 58, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(196, 30, 58, 0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-red), var(--color-red-dark));
+  animation: pulse-glow 2.5s infinite;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-red-dark), var(--color-red));
+  animation: none;
+}
+
+.hero-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.stat-number {
+  background: linear-gradient(135deg, var(--color-red), var(--color-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Track switch active state */
+.track-switch-btn.active {
+  background: linear-gradient(135deg, var(--color-red), var(--color-red-dark));
+}
+
+/* Progress ring */
+.progress-ring-fill {
+  stroke: var(--color-red) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   RESORT TABLE STYLES
+   ═══════════════════════════════════════════════════════════════════ */
+
+.resort-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-4) 0;
+}
+
+.resort-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.resort-table thead {
+  background: linear-gradient(135deg, var(--color-blue), var(--color-blue-dark));
+  color: #fff;
+}
+
+.resort-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.resort-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--color-border-light);
+  vertical-align: top;
+}
+
+.resort-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.resort-table tbody tr:hover {
+  background: var(--color-ice);
+}
+
+.resort-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.resort-flag {
+  font-size: 1.2em;
+  margin-right: 4px;
+}
+
+.resort-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed #2563eb;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.resort-link:hover {
+  color: #1d4ed8;
+  border-bottom-style: solid;
+}
+
+.resort-link::after {
+  content: '↗';
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+
+.resort-price {
+  font-weight: 700;
+  color: var(--color-red);
+  white-space: nowrap;
+}
+
+.resort-level {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.level-beginner { background: #e8f5e9; color: #2e7d32; }
+.level-intermediate { background: #e3f2fd; color: #1565c0; }
+.level-advanced { background: #fce4ec; color: #c62828; }
+.level-all { background: #f3e5f5; color: #7b1fa2; }
+
+/* ═══════════════════════════════════════════════════════════════════
+   CERTIFICATION STYLES
+   ═══════════════════════════════════════════════════════════════════ */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin: var(--space-4) 0;
+}
+
+.cert-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border-top: 4px solid var(--color-blue);
+}
+
+.cert-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.cert-card-flag {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.cert-card-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.cert-card-org {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.cert-card-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-3);
+}
+
+.cert-level-tag {
+  font-size: var(--text-xs);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--color-ice);
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.cert-card-info {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.cert-card-info p {
+  margin-bottom: var(--space-2);
+}
+
+/* Section headings with red accent */
+.section-heading {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-red), transparent) 1;
 }
