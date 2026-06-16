@@ -654,18 +654,34 @@
   function loadVideo(container, video) {
     container.innerHTML = '';
     if (video.platform === 'bilibili') {
-      // Try iframe embed, with clickable fallback
-      container.style.background = 'linear-gradient(135deg, #fb7299 0%, #e55b8a 100%)';
-      const biliLink = createElement('a', {
+      // Show a play button that loads the iframe on click
+      container.style.background = '#000';
+      var playBtn = createElement('div', {
+        className: 'video-placeholder',
+        onClick: function(e) {
+          e.preventDefault();
+          container.innerHTML = '';
+          var iframe = createElement('iframe', {
+            src: 'https://player.bilibili.com/player.html?bvid=' + video.videoId + '&page=1&high_quality=1&autoplay=1&danmaku=0',
+            allow: 'autoplay; encrypted-media; fullscreen; picture-in-picture',
+            allowfullscreen: 'true',
+            style: 'position:absolute;inset:0;width:100%;height:100%;border:none;',
+          });
+          container.appendChild(iframe);
+        },
+      });
+      playBtn.appendChild(createElement('span', { className: 'video-placeholder-icon' }, '▶️'));
+      playBtn.appendChild(createElement('span', { className: 'video-placeholder-text' }, '点击播放 · B站'));
+      container.appendChild(playBtn);
+      // Also add a small B站 link below
+      var linkRow = createElement('div', { style: 'position:absolute;bottom:8px;right:12px;z-index:2;' });
+      var extLink = createElement('a', {
         href: 'https://www.bilibili.com/video/' + video.videoId + '/',
         target: '_blank', rel: 'noopener',
-        style: 'position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-decoration:none;gap:8px;cursor:pointer;',
-      });
-      biliLink.appendChild(createElement('span', { style: 'font-size:2.5rem;' }, '📺'));
-      biliLink.appendChild(createElement('span', { style: 'font-size:1rem;font-weight:700;' }, '在B站观看视频'));
-      biliLink.appendChild(createElement('span', { style: 'font-size:0.8rem;opacity:0.85;' }, video.title || '点击跳转B站查看教学视频'));
-      biliLink.appendChild(createElement('span', { style: 'font-size:0.7rem;opacity:0.65;' }, 'BV号: ' + video.videoId));
-      container.appendChild(biliLink);
+        style: 'color:#fb7299;font-size:11px;text-decoration:none;background:rgba(0,0,0,0.6);padding:2px 8px;border-radius:10px;',
+      }, '📺 在B站打开');
+      linkRow.appendChild(extLink);
+      container.appendChild(linkRow);
     } else if (video.platform === 'douyin') {
       container.style.background = 'linear-gradient(135deg, #111 0%, #333 100%)';
       const dLink = createElement('a', {
